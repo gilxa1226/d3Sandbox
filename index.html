@@ -1,0 +1,58 @@
+<!doctype HTML>
+<title>D3 Test</title>
+<script src="./bower_components/d3/d3.min.js" charset="utf-8"></script>
+<style type="text/css">
+  body {
+    margin:0 auto;
+    position:relative;
+    width:958px;
+  }
+  .chart rect {
+    stroke: white;
+  }
+</style>
+<body>
+  <br />
+  <div style="border: 1px solid #000000; width: 300px; height:30px;"></div>
+  <svg></svg>
+</body>
+<script>
+  function cell_dim(total, cells) { return Math.floor(total/cells) }
+  var total_height = 30;
+  var total_width = 300;
+  var rows = 1; // 1hr split into 5min blocks
+  var cols = 8*4; // 8 hours in 15 minute blocks
+  var row_height = 30;
+  //var col_width = cell_dim(total_width, cols);
+  var col_width = total_width / cols;
+  var data = [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0];
+  /*for (var i = 0; i < (rows * cols); i++) {
+    data[i] = Math.random(); 
+    //console.log(i);
+  }*/
+
+  var color_chart = d3.select("div")
+                      .append("svg")
+                      .attr("class", "chart")
+                      .attr("width", total_width)
+                      .attr("height", total_height)
+                      ;
+
+  var color = d3.scale.linear()
+              .domain([d3.min(data), 1])
+              .range(["#8b0000", "#FFFFFF"]);
+
+  color_chart.selectAll("rect")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("x", function(d,i) { return Math.floor(i / rows) * col_width; })
+            //.attr("y", function(d,i) { return i % rows * row_height; })
+            .attr("y", 0)
+            .attr("width", col_width)
+            .attr("height", 30)
+            .attr("fill", color)
+            //.attr("stroke-width", 3)
+            //.attr("stroke", "#000000")
+            ;
+</script>
