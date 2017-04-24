@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lake Erie Weather Buoy Data</title>
+    </head>
+    <body>
+        <svg width="960" height="500"></svg>
+
+        <script src="//d3js.org/d3.v4.min.js"></script>
+
+        <script>
+            d3.csv("45005_5day.csv", function parseData(error, data) {
+                if (error) throw error;
+
+                var headers = data.columns;
+                var units = data.slice(0,1);
+                var metrics = data.slice(2);
+                
+                console.log(headers);
+                console.log(units);
+                console.log(metrics);
+
+            });
+        </script>
+    </body>
+</html>
+

@@ -1,1 +1,77 @@
-[{"id":"Melanie","values":[{"date":"2011-10-01T04:00:00.000Z","temperature":1},{"date":"2011-10-02T04:00:00.000Z","temperature":2},{"date":"2011-10-03T04:00:00.000Z","temperature":0.5},{"date":"2011-10-04T04:00:00.000Z","temperature":1},{"date":"2011-10-05T04:00:00.000Z","temperature":1}]},{"id":"Mike","values":[{"date":"2011-10-01T04:00:00.000Z","temperature":1},{"date":"2011-10-02T04:00:00.000Z","temperature":1},{"date":"2011-10-03T04:00:00.000Z","temperature":2},{"date":"2011-10-04T04:00:00.000Z","temperature":3},{"date":"2011-10-05T04:00:00.000Z","temperature":2}]},{"id":"Ben","values":[{"date":"2011-10-01T04:00:00.000Z","temperature":1.5},{"date":"2011-10-02T04:00:00.000Z","temperature":1},{"date":"2011-10-03T04:00:00.000Z","temperature":0},{"date":"2011-10-04T04:00:00.000Z","temperature":1.5},{"date":"2011-10-05T04:00:00.000Z","temperature":0.5}]}]
+[
+    {
+        "id": "Melanie",
+        "values": [
+            {
+                "date": "2011-10-01T04:00:00.000Z",
+                "temperature": 1
+            },
+            {
+                "date": "2011-10-02T04:00:00.000Z",
+                "temperature": 2
+            },
+            {
+                "date": "2011-10-03T04:00:00.000Z",
+                "temperature": 0.5
+            },
+            {
+                "date": "2011-10-04T04:00:00.000Z",
+                "temperature": 1
+            },
+            {
+                "date": "2011-10-05T04:00:00.000Z",
+                "temperature": 1
+            }
+        ]
+    },
+    {
+        "id": "Mike",
+        "values": [
+            {
+                "date": "2011-10-01T04:00:00.000Z",
+                "temperature": 1
+            },
+            {
+                "date": "2011-10-02T04:00:00.000Z",
+                "temperature": 1
+            },
+            {
+                "date": "2011-10-03T04:00:00.000Z",
+                "temperature": 2
+            },
+            {
+                "date": "2011-10-04T04:00:00.000Z",
+                "temperature": 3
+            },
+            {
+                "date": "2011-10-05T04:00:00.000Z",
+                "temperature": 2
+            }
+        ]
+    },
+    {
+        "id": "Ben",
+        "values": [
+            {
+                "date": "2011-10-01T04:00:00.000Z",
+                "temperature": 1.5
+            },
+            {
+                "date": "2011-10-02T04:00:00.000Z",
+                "temperature": 1
+            },
+            {
+                "date": "2011-10-03T04:00:00.000Z",
+                "temperature": 0
+            },
+            {
+                "date": "2011-10-04T04:00:00.000Z",
+                "temperature": 1.5
+            },
+            {
+                "date": "2011-10-05T04:00:00.000Z",
+                "temperature": 0.5
+            }
+        ]
+    }
+]
